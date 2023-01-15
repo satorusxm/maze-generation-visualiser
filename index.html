@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maze Generation</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+            <span id="parameters">
+                <span>
+                    <strong>COLUMNS</strong>
+                    <input id="widthInput" type="range" min="4" max="100" value="50" oninput="document.querySelector('#widthValueDisplay').innerText = this.value; document.querySelector('#heightInput').value = Math.floor(this.value * mainCnv.height / mainCnv.width); document.querySelector('#heightValueDisplay').innerText = document.querySelector('#heightInput').value;">
+                    <span id="widthValueDisplay">50</span>
+                </span>
+                <span>
+                    <strong>ROWS</strong>
+                    <input id="heightInput" type="range" min="4" max="100" value="50" oninput="document.querySelector('#heightValueDisplay').innerText = this.value; document.querySelector('#widthInput').value = Math.floor(this.value * mainCnv.width / mainCnv.height); document.querySelector('#widthValueDisplay').innerText = document.querySelector('#widthInput').value;">
+                    <span id="heightValueDisplay">50</span>
+                </span>
+                <button id="startBtn">GENERATE</button>
+                <button id="solveBtn">SOLVE</button>
+            </span>
+        </header>
+        <div id="container">
+            <canvas id="mainCanvas"></canvas>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
