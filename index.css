@@ -21,8 +21,8 @@ header {
     height: 50px;
     display: flex;
     flex-flow: row nowrap;
-    align-items: stretch;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #parameters {

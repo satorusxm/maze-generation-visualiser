@@ -223,7 +223,6 @@ document.querySelector("#solveBtn").addEventListener("click", async () => {
         // If it's the final block
         if (to == arr[0][0]) {
             to.path.forEach(b => {
-                console.log(b);
                 b.solution = 1;
             });
             to.solution = 1;
